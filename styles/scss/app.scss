@@ -1,0 +1,19 @@
+@import './fonts';
+@import './bootstrap';
+@import './variables';
+
+// Random Styles
+@import './random';
+
+// Components
+@import './Components/buttons';
+@import './Components/header';
+@import './Components/navbar';
+@import './Components/footer';
+
+// Cards
+@import './Components/cards/properties';
+@import './Components/cards/guides';
+
+// Sections
+@import './sections/index';

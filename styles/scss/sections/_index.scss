@@ -1,0 +1,53 @@
+@import "./about";
+@import "./properties";
+@import "./neighborhood";
+@import "./started";
+
+.section {
+  .section-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 28px;
+    text-align: center;
+    color: $c-secondary;
+    margin: 0 0 20px;
+
+    @media (min-width: $md) {
+      font-size: 35px;
+      line-height: 35px;
+    }
+
+    &.top-line {
+      &::before {
+        display: block;
+        content: "";
+        width: 41px;
+        height: 4px;
+        background-color: $c-secondary;
+        border-radius: 12px;
+        margin: 0 auto 10px;
+      }
+
+      &.line-left {
+        &::before {
+          margin: 0 auto 10px 0;
+        }
+      }
+
+      &.line-right {
+        &::before {
+          margin: 0 0 10px auto;
+        }
+      }
+    }
+  }
+  .section-desc {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #7d8589;
+  }
+}

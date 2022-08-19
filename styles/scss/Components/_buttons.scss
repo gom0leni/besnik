@@ -1,0 +1,77 @@
+button {
+  background-color: transparent;
+  border: none;
+}
+
+.btn-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  width: -moz-fit-content;
+  padding: 16px 38px;
+  background-color: $c-primary;
+  border-radius: 12px;
+  font-family: $poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  box-sizing: border-box;
+  transition: all 0.15s linear;
+
+  &:hover {
+    background-color: rgba($c-primary, 0.9);
+  }
+}
+
+.btn-secondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  width: -moz-fit-content;
+  padding: 15px 22px;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  font-family: $poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  color: #002366;
+  box-sizing: border-box;
+  transition: all 0.15s linear;
+
+  &:hover {
+    background-color: rgba(#FFFFFF, 0.9);
+  }
+}
+
+.link-btn {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: $c-link;
+
+  &::after {
+    display: block;
+    content: url("/img/icons/blue-left-arrow.svg");
+    width: 24px;
+    margin: 0 0 0 8px;
+    transition: margin 0.15s linear;
+  }
+
+  &:hover {
+    &::after {
+      margin: 0 -4px 0 12px;
+    }
+  }
+}

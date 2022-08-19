@@ -1,0 +1,126 @@
+header {
+  background-color: #e6f0ff;
+  padding: 12px 0 0;
+
+  @media (min-width: $md) {
+    padding: 24px 0 0;
+  }
+
+  @media (min-width: $lg) {
+    padding: 38px 0 0;
+  }
+
+  .promo-block {
+    margin: 54px 0 0;
+
+    .left-side {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      height: 100%;
+      padding: 0 0 24px;
+
+      .top-title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 20px;
+        letter-spacing: 0.01em;
+        color: #687691;
+
+        @media (min-width: $md) {
+          font-size: 15px;
+          line-height: 22px;
+          margin: 0 0 8px;
+        }
+
+        @media (min-width: $lg) {
+          font-size: 16px;
+          line-height: 25px;
+        }
+
+        @media (min-width: $xl) {
+          font-size: 18px;
+          line-height: 27px;
+        }
+      }
+
+      .title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 27px;
+        line-height: 1.5;
+        color: #000336;
+
+        @media (min-width: $md) {
+          font-size: 36px;
+          line-height: 1.5;
+        }
+
+        @media (min-width: $lg) {
+          font-size: 44px;
+          line-height: 54px;
+        }
+
+        @media (min-width: $xxl) {
+          font-size: 64px;
+          line-height: 76px;
+        }
+      }
+
+      .text {
+        max-width: 550px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 18px;
+        color: #5a6473;
+        margin: 8px 0 0;
+
+        @media (min-width: $md) {
+          font-size: 15px;
+          line-height: 22px;
+        }
+
+        @media (min-width: $lg) {
+          font-size: 16px;
+          line-height: 25px;
+        }
+
+        @media (min-width: $xl) {
+          font-size: 18px;
+          line-height: 32px;
+          margin: 30px 0 0;
+        }
+      }
+
+      .btn-primary {
+        margin: 40px 0 0;
+      }
+    }
+
+    .right-side {
+      display: none;
+
+      @media (min-width: $md) {
+        display: flex;
+      }
+
+      .house-illustration {
+        max-width: 584px;
+        max-height: 619px;
+        width: 100%;
+        height: 100%;
+
+        @media (min-width: $xl) {
+          max-width: unset;
+          width: 500px;
+        }
+
+        @media (min-width: $xxl) {
+          width: 584px;
+        }
+      }
+    }
+  }
+}

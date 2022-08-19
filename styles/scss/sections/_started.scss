@@ -1,0 +1,61 @@
+.started {
+    margin: 50px 0 0;
+
+    @media(min-width: $md) {
+        margin: 90px 0 0;
+    }
+
+    @media(min-width: $lg) {
+        margin: 110px 0 0;
+    }
+
+    @media(min-width: $xl) {
+        margin: 140px 0 0;
+    }
+
+    .started-wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background-color: #063183;
+        border-radius: 20px;
+        padding: 40px 40px;
+
+        @media(min-width: $sm) {
+            padding: 70px 40px;
+        }
+
+        @media(min-width: $lg) {
+            padding: 110px 80px;
+        }
+
+        .section-title {
+            text-align: left;
+            color: #FFFFFF;
+            margin: 0 0 15px;
+        }
+
+        .section-desc {
+            color: rgba(#FFFFFF, .75);
+        }
+    }
+
+    .btn-secondary {
+        margin: 20px 0 0;
+    }
+
+    .illustration {
+        position: absolute;
+        bottom: 0;
+        right: 3%;
+        display: none;
+
+        @media(min-width: $md) {
+            display: block;
+        }
+
+        @media(min-width: $lg) {
+            right: 20%;
+        }
+    }
+}

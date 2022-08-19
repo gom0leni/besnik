@@ -1,0 +1,105 @@
+.properties-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 65px 80px -46px rgba(226, 238, 249, 0.6);
+  border-radius: 12px;
+
+  &:hover {
+    box-shadow: 0px 65px 80px -46px rgba(215, 227, 238, 0.6);
+    .cover {
+      img {
+        transform: scale(1.04);
+      }
+    }
+  }
+
+  .cover {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 177px;
+
+    @media(min-width: $lg) {
+        height: 227px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.15s linear;
+    }
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 24px;
+
+    .price {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 20px;
+      text-align: left;
+      color: $c-secondary;
+      margin: 0 0 8px;
+    }
+
+    .description {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+      text-align: left;
+
+      color: #a3a6ab;
+    }
+
+    .info {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .item {
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        margin: 15px 0 0;
+
+        &:not(:last-child) {
+          margin: 15px 14px 0 0;
+        }
+
+        @media (min-width: $xl) {
+          margin: 22px 0 0;
+
+          &:not(:last-child) {
+            margin: 22px 23px 0 0;
+          }
+        }
+
+        .icon {
+          max-width: 21px;
+          max-height: 18px;
+        }
+
+        .text {
+          margin: 0 0 0 8px;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 14px;
+          text-align: left;
+          letter-spacing: 0.01em;
+
+          color: #4d4d52;
+        }
+      }
+    }
+  }
+}

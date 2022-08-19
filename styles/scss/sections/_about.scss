@@ -1,0 +1,157 @@
+.about-us {
+  padding: 122px 0;
+
+  .reviews {
+    .section-head {
+      .left-side {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 24px;
+
+        @media (min-width: $md) {
+          align-items: flex-start;
+          margin-bottom: 0;
+        }
+
+        .logo {
+          max-width: 80px;
+          max-height: 16px;
+          width: 100%;
+          height: 100%;
+          margin: 0 0 23px;
+
+          @media (min-width: $md) {
+            max-width: 90px;
+            max-height: 18px;
+          }
+
+          @media (min-width: $lg) {
+            max-width: 107px;
+            max-height: 24px;
+          }
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      .right-side {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media (min-width: $md) {
+          align-items: flex-end;
+        }
+
+        .right-side {
+          display: flex;
+          align-items: center;
+          margin: 0 0 14px;
+        }
+      }
+    }
+    .companies-grid {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+      margin: 30px 0 0;
+
+      @media (min-width: $sm) {
+        flex-wrap: wrap;
+        flex-direction: unset;
+      }
+
+      @media (min-width: $md) {
+        flex-direction: row;
+        flex-wrap: unset;
+      }
+
+      @media (min-width: $lg) {
+        margin: 70px -20px 0;
+      }
+
+      .company-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 31px;
+        height: 91px;
+        background-color: transparent;
+        box-shadow: 0px 45px 80px rgba(0, 0, 0, 0);
+        border-radius: 12px;
+        transition: all 0.15s linear;
+
+        @media (min-width: $md) {
+          padding: 0 21px;
+          height: 71px;
+        }
+
+        @media (min-width: $lg) {
+          padding: 5px 41px;
+          height: 91px;
+        }
+
+        &:hover {
+          background-color: #ffffff;
+          box-shadow: 0px 45px 80px rgba(0, 0, 0, 0.04);
+        }
+
+        img {
+          max-width: 204px;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .works {
+    margin: 60px 0 0;
+
+    @media (min-width: $md) {
+      margin: 80px 0 0;
+    }
+
+    @media (min-width: $lg) {
+      margin: 120px 0 0;
+    }
+    @media (min-width: $xl) {
+      margin: 160px 0 0;
+    }
+
+    .section-head {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .section-desc {
+        text-align: center;
+        line-height: 24px;
+        max-width: 459px;
+
+        @media (min-width: $md) {
+          line-height: 30px;
+        }
+      }
+    }
+
+    .guideline-item {
+      margin: 40px 0 0;
+
+      @media (min-width: $md) {
+        margin: 70px 0 0;
+      }
+    }
+
+    .btn-primary {
+      margin: 30px auto 0;
+
+      @media (min-width: $lg) {
+        margin: 50px auto 0;
+      }
+    }
+  }
+}
